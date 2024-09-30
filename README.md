@@ -39,6 +39,31 @@ Understanding the relationship between your pricing strategy, operational costs,
 
 ### Data Analysis
 
+```sql
+with cte as (
+select * from bike_share_yr_0
+union all
+select * from bike_share_yr_1)
+
+select 
+dteday,
+season,
+a.yr,
+weekday,
+hr,
+rider_type,
+riders,
+price,
+COGS,
+riders * CAST(price AS DECIMAL(10,2)) AS revenue,
+riders * CAST(price AS DECIMAL(10,2)) - CAST(COGS AS DECIMAL(10,2)) AS profit
+
+from cte a
+left join cost_table b
+on a.yr = b.yr
+```
+
+
 
 ### Findings/Result
 - Peak Hours:
