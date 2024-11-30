@@ -1,7 +1,7 @@
 # Bike Shop Analysis
 ### Project Overview
 
- develop a dashboard for "Toman Bike Share" that displays our key performance metrics for informed decision-making.
+ develop a dashboard for "Toman Bike Shop" that displays our key performance metrics for informed decision-making.
 Requirements:
 .
 Hourly Revenue Analysis
@@ -63,40 +63,33 @@ left join cost_table b
 on a.yr = b.yr
 ```
 
-
-
 ### Findings/Result
-- Peak Hours:
+- KPI Over Time
+The graph shows the comparison of the number of riders, profit, and revenue by month.
+![KPI Overtime](https://github.com/user-attachments/assets/b7a6c546-9dab-4467-9c79-356c0c5f07c8)
 
+- Peak Hours:
 Morning (07:00 - 09:00): A high number of users is likely during this time as people are commuting to work or school.
 Evening (17:00 - 19:00): There's an increase in users again as people return from work.
 Weekends (10:00 - 14:00): A spike in casual users can be seen, likely using bikes for leisure or recreational activities.
+![hr per week](https://github.com/user-attachments/assets/7c1ddc8c-3d63-4e14-98c7-71419ec552d9)
+
+- The Most Profitable Seasons
+The graph indicates that Season 3 is the most profitable, followed by Season 2, then Season 4, with Season 1 generating the lowest profit.
+  ![revenue by season](https://github.com/user-attachments/assets/f4757f79-08a4-4dcb-91de-60a1a65451df)
 
 - User
-  - Registered Users:
-Revenue Contribution: Account for approximately 70% of total revenue.
-Usage Frequency: High, with an average of 5 uses per month. 
+  - Registered Riders:
+Revenue Contribution: Account for approximately 82% of total revenue.
+Usage Frequency: High
 
-  - Casual Users:
-Revenue Contribution: Account for approximately 30% of total revenue.
-Usage Frequency: Low, with an average of 1-2 uses per month.
+  - Casual Riders:
+Revenue Contribution: Account for approximately 18% of total revenue.
+Usage Frequency: Low
+![rider by demographic](https://github.com/user-attachments/assets/d2dc8c88-b11b-4343-b538-f923291f758b)
 
-- Rental Price:
-
-  - 10% Price Increase: Revenue increases by 10% without a significant drop in the number of users.
-  - 15% Price Increase: Revenue increases by 15%, but there is a slight decrease in the number of users (~5%).
-- Operational Costs (COGS):
-
-  - Average COGS: $2.50 per rental.
-  - Profit Margin: With a price of $5.49 (10% increase), the profit margin rises from $2.49 to $3.99 per rental.
-
-- Weekends (Saturday & Sunday):
-Number of Users: Increases by 40% compared to weekdays.
-Revenue: Increases by 50% on weekends.
-
-- Weekdays (Monday - Friday):
-Number of Users: Stable, with slight increases during morning and evening hours.
-Revenue: Consistent, with small fluctuations throughout the day.
+### Dashboard
+![Dashboard](https://github.com/user-attachments/assets/3006daef-aa6f-4094-a397-a19572acfc99)
 
 ### Recommendation 
 
